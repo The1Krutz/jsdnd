@@ -1,0 +1,21 @@
+section{
+    font-size:larger;
+}
+
+.booktoggle{
+    border:1px solid grey;
+    width:30vw;
+    min-width:300px;
+    float:left;
+    height:50px;
+}
+
+button#assembler{
+    width:100%;
+    font-size:larger;
+}
+
+section#output{
+    height:40vh;
+    border:1px dashed red;
+}

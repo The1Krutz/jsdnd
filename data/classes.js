@@ -56,12 +56,10 @@ export default [
     },
     {
         name: "Barbarian",
-        base: null,
         source: "Player's Handbook"
     },
     {
         name: "Bard",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -91,7 +89,6 @@ export default [
     },
     {
         name: "Cleric",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -111,7 +108,6 @@ export default [
     },
     {
         name: "Druid",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -121,7 +117,6 @@ export default [
     },
     {
         name: "Fighter",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -146,7 +141,6 @@ export default [
     },
     {
         name: "Monk",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -171,7 +165,6 @@ export default [
     },
     {
         name: "Paladin",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -186,12 +179,10 @@ export default [
     },
     {
         name: "Ranger",
-        base: null,
         source: "Player's Handbook"
     },
     {
         name: "Rogue",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -236,7 +227,6 @@ export default [
     },
     {
         name: "Sorcerer",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -276,7 +266,6 @@ export default [
     },
     {
         name: "Warlock",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -296,7 +285,6 @@ export default [
     },
     {
         name: "Wizard",
-        base: null,
         source: "Player's Handbook"
     },
     {
@@ -306,12 +294,10 @@ export default [
     },
     {
         name: "Barbarian",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
         name: "Bard",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -326,7 +312,6 @@ export default [
     },
     {
         name: "Cleric",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -341,12 +326,10 @@ export default [
     },
     {
         name: "Druid",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
         name: "Fighter",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -361,7 +344,6 @@ export default [
     },
     {
         name: "Monk",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -371,7 +353,6 @@ export default [
     },
     {
         name: "Paladin",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -381,12 +362,10 @@ export default [
     },
     {
         name: "Ranger",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
         name: "Rogue",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -396,7 +375,6 @@ export default [
     },
     {
         name: "Sorcerer",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -411,7 +389,6 @@ export default [
     },
     {
         name: "Warlock",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -421,7 +398,6 @@ export default [
     },
     {
         name: "Wizard",
-        base: null,
         source: "System Resource Document v5.1"
     },
     {
@@ -466,7 +442,6 @@ export default [
     },
     {
         name: "Artificer",
-        base: null,
         source: "Unearthed Arcana"
     },
     {
@@ -536,7 +511,6 @@ export default [
     },
     {
         name: "Mystic",
-        base: null,
         source: "Unearthed Arcana"
     },
     {
@@ -591,7 +565,6 @@ export default [
     },
     {
         name: "Ranger Revised",
-        base: null,
         source: "Unearthed Arcana"
     },
     {

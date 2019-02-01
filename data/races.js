@@ -1,13 +1,11 @@
 export default [
     {
         name: "Aarakocra",
-        base: null,
         statmods: "Dex+2,Wis+1",
         source: "Elemental Evil"
     },
     {
         name: "Aasimar",
-        base: null,
         statmods: "Cha+2",
         source: "Volo's Guide to Monsters"
     },
@@ -19,7 +17,6 @@ export default [
     },
     {
         name: "Aetherborn",
-        base: null,
         statmods: "Cha+2,%+1,%+1",
         source: "Plane Shift: Kaladesh"
     },
@@ -37,13 +34,11 @@ export default [
     },
     {
         name: "Aven (Amonkhet)",
-        base: null,
         statmods: "Dex+2",
         source: "Plane Shift: Amonkhet"
     },
     {
         name: "Aven (Dominaria)",
-        base: null,
         statmods: "Dex+2,Wis+2",
         source: "Plane Shift: Dominaria"
     },
@@ -67,19 +62,16 @@ export default [
     },
     {
         name: "Bugbear",
-        base: null,
         statmods: "Str+2,Dex+1",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Centaur",
-        base: null,
         statmods: "Str+2,Wis+1",
         source: "Guildmasters' Guide to Ravnica"
     },
     {
         name: "Changeling",
-        base: null,
         statmods: "Dex+1,Cha+1",
         source: "Unearthed Arcana"
     },
@@ -115,25 +107,21 @@ export default [
     },
     {
         name: "Dragonborn",
-        base: null,
         statmods: "Str+2,Cha+1",
         source: "Player's Handbook"
     },
     {
         name: "Dragonborn",
-        base: null,
         statmods: "Str+2,Cha+1",
         source: "System Resource Document v5.1"
     },
     {
         name: "Dwarf",
-        base: null,
         statmods: "Con+2",
         source: "Player's Handbook"
     },
     {
         name: "Dwarf",
-        base: null,
         statmods: "Con+2",
         source: "System Resource Document v5.1"
     },
@@ -151,13 +139,11 @@ export default [
     },
     {
         name: "Elf",
-        base: null,
         statmods: "Dex+2",
         source: "Player's Handbook"
     },
     {
         name: "Elf",
-        base: null,
         statmods: "Dex+2",
         source: "System Resource Document v5.1"
     },
@@ -181,7 +167,6 @@ export default [
     },
     {
         name: "Firbolg",
-        base: null,
         statmods: "Wis+2,Str+1",
         source: "Volo's Guide to Monsters"
     },
@@ -199,13 +184,11 @@ export default [
     },
     {
         name: "Genasi",
-        base: null,
         statmods: "Con+2",
         source: "Elemental Evil"
     },
     {
         name: "Gith",
-        base: null,
         statmods: "Int+1",
         source: "Mordenkainen's Tome of Foes"
     },
@@ -229,25 +212,21 @@ export default [
     },
     {
         name: "Gnome",
-        base: null,
         statmods: "Int+2",
         source: "Player's Handbook"
     },
     {
         name: "Gnome",
-        base: null,
         statmods: "Int+2",
         source: "System Resource Document v5.1"
     },
     {
         name: "Goblin",
-        base: null,
         statmods: "Dex+2,Con+1",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Goliath",
-        base: null,
         statmods: "Str+2,Con+1",
         source: "Volo's Guide to Monsters"
     },
@@ -259,37 +238,31 @@ export default [
     },
     {
         name: "Half-Elf",
-        base: null,
         statmods: "Cha+2,%+1,%+1",
         source: "Player's Handbook"
     },
     {
         name: "Half-Elf",
-        base: null,
         statmods: "Cha+2,%+1,%+1",
         source: "System Resource Document v5.1"
     },
     {
         name: "Half-Orc",
-        base: null,
         statmods: "Str+2,Con+1",
         source: "Player's Handbook"
     },
     {
         name: "Half-Orc",
-        base: null,
         statmods: "Str+2,Con+1",
         source: "System Resource Document v5.1"
     },
     {
         name: "Halfling",
-        base: null,
         statmods: "Dex+2",
         source: "Player's Handbook"
     },
     {
         name: "Halfling",
-        base: null,
         statmods: "Dex+2",
         source: "System Resource Document v5.1"
     },
@@ -325,19 +298,16 @@ export default [
     },
     {
         name: "Hobgoblin",
-        base: null,
         statmods: "Con+2,Int+1",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Human",
-        base: null,
         statmods: "Str+1,Dex+1,Con+1,Int+1,Wis+1,Cha+1",
         source: "Player's Handbook"
     },
     {
         name: "Human",
-        base: null,
         statmods: "Str+1,Dex+1,Con+1,Int+1,Wis+1,Cha+1",
         source: "System Resource Document v5.1"
     },
@@ -355,31 +325,26 @@ export default [
     },
     {
         name: "Kalashtar",
-        base: null,
         statmods: "Wis+1,Cha+1,%+1",
         source: "Wayfinder's Guide to Eberron"
     },
     {
         name: "Kenku",
-        base: null,
         statmods: "Dex+2,Wis+1",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Khenra",
-        base: null,
         statmods: "Dex+2,Str+1",
         source: "Plane Shift: Amonkhet"
     },
     {
         name: "Kobold",
-        base: null,
         statmods: "Dex+2,Str-2",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Kor",
-        base: null,
         statmods: "Dex+2,Wis+1",
         source: "Plane Shift: Zendikar"
     },
@@ -403,7 +368,6 @@ export default [
     },
     {
         name: "Lizardfolk",
-        base: null,
         statmods: "Con+2,Wis+1",
         source: "Volo's Guide to Monsters"
     },
@@ -421,7 +385,6 @@ export default [
     },
     {
         name: "Loxodon",
-        base: null,
         statmods: "Con+2,Wis+1",
         source: "Guildmasters' Guide to Ravnica"
     },
@@ -439,13 +402,11 @@ export default [
     },
     {
         name: "Merfolk",
-        base: null,
         statmods: "Cha+1",
         source: "Plane Shift: Zendikar"
     },
     {
         name: "Minotaur",
-        base: null,
         statmods: "Str+1",
         source: "Unearthed Arcana"
     },
@@ -457,13 +418,11 @@ export default [
     },
     {
         name: "Naga",
-        base: null,
         statmods: "Con+2,Int+1",
         source: "Plane Shift: Amonkhet"
     },
     {
         name: "Orc",
-        base: null,
         statmods: "Str+2,Con+2,Int-2",
         source: "Volo's Guide to Monsters"
     },
@@ -511,19 +470,16 @@ export default [
     },
     {
         name: "Shifter",
-        base: null,
         statmods: "Dex+1",
         source: "Unearthed Arcana"
     },
     {
         name: "Simic Hybrid",
-        base: null,
         statmods: "Con+2,%+1",
         source: "Guildmasters' Guide to Ravnica"
     },
     {
         name: "Siren",
-        base: null,
         statmods: "Cha+2",
         source: "Plane Shift: Ixalan"
     },
@@ -535,37 +491,31 @@ export default [
     },
     {
         name: "Tabaxi",
-        base: null,
         statmods: "Dex+2,Cha+1",
         source: "Volo's Guide to Monsters"
     },
     {
         name: "Tiefling",
-        base: null,
         statmods: "Int+1,Cha+2",
         source: "Player's Handbook"
     },
     {
         name: "Tiefling",
-        base: null,
         statmods: "Int+1,Cha+2",
         source: "System Resource Document v5.1"
     },
     {
         name: "Tiefling (MtoF)",
-        base: null,
         statmods: "",
         source: "Mordenkainen's Tome of Foes"
     },
     {
         name: "Tortle",
-        base: null,
         statmods: "Str+2,Wis+1",
         source: "Tomb of Annihilation"
     },
     {
         name: "Triton",
-        base: null,
         statmods: "Str+1,Con+1,Cha+1",
         source: "Volo's Guide to Monsters"
     },
@@ -577,37 +527,31 @@ export default [
     },
     {
         name: "Vampire",
-        base: null,
         statmods: "Cha+2,Wis+1",
         source: "Plane Shift: Ixalan"
     },
     {
         name: "Vampire",
-        base: null,
         statmods: "Int+1,Cha+2",
         source: "Plane Shift: Zendikar"
     },
     {
         name: "Variant Tiefling",
-        base: null,
         statmods: "Cha+2",
         source: "Unearthed Arcana"
     },
     {
         name: "Vedalken",
-        base: null,
         statmods: "Int+2,Wis+1",
         source: "Guildmasters' Guide to Ravnica"
     },
     {
         name: "Viashino",
-        base: null,
         statmods: "Dex+2,Str+1",
         source: "Unearthed Arcana"
     },
     {
         name: "Warforged",
-        base: null,
         statmods: "Str+1,Con+1",
         source: "Unearthed Arcana"
     },
@@ -631,7 +575,6 @@ export default [
     },
     {
         name: "Yuan-ti Pureblood",
-        base: null,
         statmods: "Cha+2,Int+1",
         source: "Volo's Guide to Monsters"
     },

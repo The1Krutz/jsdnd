@@ -140,8 +140,6 @@ function togglepermittedsource(source) {
     } else {
         config.permittedsources.splice(ind, 1)
     }
-
-    console.log(config.permittedsources.sort())
 }
 
 for (let item of classes.concat(races).concat(backgrounds)) {

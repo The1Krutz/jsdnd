@@ -16,6 +16,5 @@ button#assembler{
 }
 
 section#output{
-    height:40vh;
-    border:1px dashed red;
+    min-height:40vh;
 }

@@ -1,9 +1,9 @@
-import classes from '../data/classes.js';
-import races from '../data/races.js';
-import backgrounds from '../data/backgrounds.js';
+import classes from './data/classes.js';
+import races from './data/races.js';
+import backgrounds from './data/backgrounds.js';
 
 const config = {
-    statgen: 'alltens',
+    statgen: 'standardarray',
     permittedsources: [],
     allsources: []
 }
@@ -11,7 +11,15 @@ const config = {
 // variety of ways to generate 6 random stats
 const statgen = {
     alltens: () => [10, 10, 10, 10, 10, 10],
-    standardarray: () => [15, 14, 13, 12, 10, 8],
+    standardarray: () => {
+        let sa = [15, 14, 13, 12, 10, 8];
+        let response = [];
+
+        while (sa.length > 0) {
+            response.push(...sa.splice(dieroll(sa.length, 0), 1))
+        }
+        return response;
+    },
     _3to18: () => [
         dieroll(18, 3),
         dieroll(18, 3),
@@ -78,6 +86,11 @@ function processstatmods(stats, modstring) {
         }
         throw new Error('messed up stat mod, check your data', modstring)
     }
+}
+
+function statmod(stat) {
+    let mod = Math.floor((stat - 10) / 2);
+    return (mod >= 0 ? '+' : '') + mod;
 }
 
 function assemble() {
@@ -168,12 +181,17 @@ document.getElementById('assembler').addEventListener('click', () => {
         }
     }
     sources.sort()
+    let statstring = 'Stats:<br/>';
+    for (let s of ['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha']) {
+        statstring += `${s}: ${c.stats[s.toLocaleLowerCase()]} (${statmod(c.stats[s.toLocaleLowerCase()])})<br/>`
+    }
 
     let outputsection = document.getElementById('output');
 
     outputsection.children.race.innerHTML = `Race: ${c.race.name} (${c.subrace.name})`
     outputsection.children.class.innerHTML = `Class: ${c.class.name} (${c.subclass.name})`
     outputsection.children.background.innerHTML = `Background: ${c.background.name}`
-    outputsection.children.sources.innerHTML = `Sources:<br />${sources.join('<br />')}`
+    outputsection.children.stats.innerHTML = statstring;
+    outputsection.children.sources.innerHTML = `Sources:<br/>${sources.join('<br/>')}`
 
 }, false)

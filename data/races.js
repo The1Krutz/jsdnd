@@ -96,7 +96,7 @@ export default [
         "source": "Plane Shift: Zendikar"
     },
     {
-        "name": "Dark Elf",
+        "name": "Drow",
         "base": "Elf",
         "statmods": "Cha+1",
         "source": "Player's Handbook"
@@ -639,6 +639,12 @@ export default [
         "name": "Zariel",
         "base": "Tiefling (MtoF)",
         "statmods": "Cha+2,Str+1",
+        "source": "Mordenkainen's Tome of Foes"
+    },
+    {
+        "name": "Duergar",
+        "base": "Dwarf",
+        "statmods": "Str+1",
         "source": "Mordenkainen's Tome of Foes"
     }
 ]

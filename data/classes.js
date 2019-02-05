@@ -1,4 +1,10 @@
 export default [
+    /**
+     * name: name of the class in the source book
+     * base: if the class is a base class (ie: cleric), this should be null, or left out
+     *      if this is a subclass (ie: death domain), this should be the name of the base class (ie: cleric)
+     * source: name of the source book
+     */
     {
         name: "Death Domain",
         base: "Cleric",

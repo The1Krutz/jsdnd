@@ -1,4 +1,8 @@
 export default [
+    /**
+     * name: name of the background in the source book
+     * source: name of the source book
+     */
     {
         name: "Acolyte",
         source: "System Resource Document v5.1"

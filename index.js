@@ -3,15 +3,15 @@ import races from './data/races.js';
 import backgrounds from './data/backgrounds.js';
 
 const config = {
-    statgen: 'standardarray',
+    statgen: 'Standard array',
     permittedsources: [],
     allsources: []
 }
 
 // variety of ways to generate 6 random stats
 const statgen = {
-    alltens: () => [10, 10, 10, 10, 10, 10],
-    standardarray: () => {
+    "All tens": () => [10, 10, 10, 10, 10, 10],
+    "Standard array": () => {
         let sa = [15, 14, 13, 12, 10, 8];
         let response = [];
 
@@ -20,37 +20,33 @@ const statgen = {
         }
         return response;
     },
-    _3to18: () => [
-        dieroll(18, 3),
-        dieroll(18, 3),
-        dieroll(18, 3),
-        dieroll(18, 3),
-        dieroll(18, 3),
-        dieroll(18, 3)
-    ],
-    _3d6: () => [
-        dieroll(6) + dieroll(6) + dieroll(6),
-        dieroll(6) + dieroll(6) + dieroll(6),
-        dieroll(6) + dieroll(6) + dieroll(6),
-        dieroll(6) + dieroll(6) + dieroll(6),
-        dieroll(6) + dieroll(6) + dieroll(6),
-        dieroll(6) + dieroll(6) + dieroll(6),
-    ],
-    _4d6droplowest: () => {
-        // todo
+    "Random 3-18": () => {
+        const one = () => dieroll(18, 3)
+        return [one(), one(), one(), one(), one(), one()];
+    },
+    "3d6": () => {
+        const one = () => dieroll(6) + dieroll(6) + dieroll(6);
+        return [one(), one(), one(), one(), one(), one()];
+    },
+    "4d6, drop lowest": () => {
+        const one = () => [dieroll(6), dieroll(6), dieroll(6), dieroll(6)].sort().slice(1).reduce((a, b) => a + b);
+        return [one(), one(), one(), one(), one(), one()];
     }
 }
 
+// default option
 const na = {
     name: 'n/a',
     source: null
 }
 
+// roll a single die with <high> sides. Also works as a generic randomizer if a <low> is provided
 function dieroll(high, low) {
     if (low == null) { low = 1 }
     return Math.floor((Math.random() * (high - low)) + low);
 }
 
+// take the racial stat modifiers (con+1, etc) and adds them to the existing stats
 function processstatmods(stats, modstring) {
     if (modstring.endsWith(',')) {
         modstring = modstring.slice(0, modstring.length - 1)
@@ -88,11 +84,13 @@ function processstatmods(stats, modstring) {
     }
 }
 
+// calculates stat modifiers and returns them in a print-friendly format, ie: +2 for 15, -1 for 9
 function statmod(stat) {
     let mod = Math.floor((stat - 10) / 2);
     return (mod >= 0 ? '+' : '') + mod;
 }
 
+// gathers up all the bits to build a character into one place
 function assemble() {
     let character = {
         class: null,
@@ -133,6 +131,7 @@ function assemble() {
     return character;
 }
 
+// handler for when a sourcebook checkbox is clicked
 function togglepermittedsource(source) {
     let ind = config.permittedsources.indexOf(source)
     if (ind === -1) {
@@ -142,6 +141,7 @@ function togglepermittedsource(source) {
     }
 }
 
+// harvest the list of available source books and add them to the config object
 for (let item of classes.concat(races).concat(backgrounds)) {
     if (config.allsources.indexOf(item.source) === -1) {
         config.allsources.push(item.source)
@@ -151,6 +151,7 @@ for (let item of classes.concat(races).concat(backgrounds)) {
 config.allsources.sort()
 config.permittedsources.sort()
 
+// create the list of check boxes for each source book
 let bookselectors = document.getElementById('booklist');
 for (let s of config.allsources) {
     let eid = `${s} toggle`
@@ -170,6 +171,29 @@ for (let s of config.allsources) {
     bookselectors.appendChild(label);
 }
 
+// populate the dropdown with available stat generation methods
+for (let s of Object.keys(statgen)) {
+    let e = document.createElement('option');
+    e.value = s;
+    e.text = s;
+    e.selected = s === config.statgen;
+
+    document.getElementById('statgenpicker').appendChild(e);
+}
+
+// event handler for the statgen dropdown selection changing
+document.getElementById('statgenpicker').addEventListener('change', event => {
+    for (let i = 0; i < event.target.children.length; i++) {
+        const opt = event.target.children[i];
+
+        if (opt.selected === true) {
+            config.statgen = opt.value;
+            break
+        }
+    }
+}, false);
+
+// event handler for the assemble button
 document.getElementById('assembler').addEventListener('click', () => {
     let c = assemble();
     let sources = [];

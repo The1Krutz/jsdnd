@@ -1,4 +1,10 @@
 export default [
+    /**
+     * name: name of the race in the source book
+     * base: if the race is a base race (ie: elf), this should be null, or left out
+     *      if this is a subrace (ie: drow), this should be the name of the base race (ie: elf)
+     * source: name of the source book
+     */
     {
         name: "Aarakocra",
         statmods: "Dex+2,Wis+1",
